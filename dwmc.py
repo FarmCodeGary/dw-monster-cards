@@ -379,7 +379,7 @@ def pdf_create_page(monster_dict):
     """Create PDF pages of formatted monster cards.
     """
     m = monster_dict
-    # Name, HP, Armor
+    # Name, HP, Armor, References
     hp_label = None
     hp_value = None
     armor_label = None
@@ -395,7 +395,15 @@ def pdf_create_page(monster_dict):
     for word in name.split(" "):
         words.append("%s<font size=14>%s</font>" % (word[0:1], word[1:]))
     name = " ".join(words)
-    name = Paragraph(name, style_title)
+
+    if m["reference"] and m["setting_reference"]:
+        reference = " of the %s [DW %d, %d]" % (
+            m["setting"], m["reference"], m["setting_reference"])
+    elif m["setting_reference"]:
+        reference = "[DW %d]" % (m["setting_reference"])
+    name = Paragraph(name + '<font size="8">' + reference + '</font>',
+                     style_title)
+
     table = [[name, hp_label, hp_value],
              ["", armor_label, armor_value]]
     style = [("LINEABOVE", (0, 0), (2, 0), 1, colors.black),
@@ -492,7 +500,6 @@ def pdf_create_page(monster_dict):
     elements.append(Spacer(box_width, spacer))
     table = [[Paragraph(m["description"], style_desc)]]
     style = [("LINEABOVE", (0, 0), (0, 0), 0.5, colors.black),
-             ("LINEBELOW", (0, 0), (0, 0), 0.5, colors.black),
              ("LEFTPADDING", (0, 0), (0, 0), 0),
              ("RIGHTPADDING", (0, 0), (0, 0), 0),
              ("BOTTOMPADDING", (0, 0), (0, 0), (spacer / 2)),
@@ -501,17 +508,7 @@ def pdf_create_page(monster_dict):
              ]
     elements.append(Table(table, [box_width - 8],
                           style=style))
-    # References
-    elements.append(Spacer(box_width, (spacer / 2)))
-    reference = "%s of the %s" % (m["name"], m["setting"])
-    elements.append(Paragraph(reference, style_ref))
-    reference = None
-    if m["reference"] and m["setting_reference"]:
-        reference = "[DW %d, %d]" % (m["reference"], m["setting_reference"])
-    elif m["setting_reference"]:
-        reference = "[DW %d]" % (m["setting_reference"])
-    if reference:
-        elements.append(Paragraph(reference, style_ref))
+
     # Next card
     elements.append(FrameBreak())
 
@@ -711,6 +708,7 @@ if args.back_pdf or args.pdf:
 
         style_desc = style_default.clone("desc")
         style_desc.alignment = TA_JUSTIFY
+        style_desc.fontSize = 8
 
         style_ref = style_default.clone("ref")
         style_ref.alignment = TA_CENTER
