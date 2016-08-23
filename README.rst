@@ -1,9 +1,15 @@
 Overview
 =========
 
-DW Monster Cards eases the creation of 4" x 5.5" `Dungeon World`_ monster cards
-(ex. `monster_cards.pdf`_). In addition to the primary PDF creation
-functionality, dwmc.py also has has some utility functions.
+This fork of DW Monster Cards has been modified to create 3"x5"
+`Dungeon World`_ monster cards (ex. `monster_cards.pdf`_), rather than the
+original 4"x5.5". (This is so you can easily mix them with your handwritten
+3"x5" index cards, possibly sorted in an index card storage box.) I made some
+other changes as well: most notably I separated "Instinct" from "Moves", as per
+the Dungeon World book.
+
+In addition to the primary PDF creation functionality, dwmc.py also has has
+some utility functions.
 
 
 Inputs
