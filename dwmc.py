@@ -20,7 +20,7 @@ from xml.etree import ElementTree
 
 # Third-party
 from reportlab.lib import colors
-from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY
+from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_RIGHT
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import inch
@@ -411,27 +411,25 @@ def pdf_create_page(monster_dict):
     # Tags
     monster_tags = combine_monster_tags(m, formatted=True)
     if monster_tags:
-        elements.append(Paragraph(monster_tags, style_hang))
+        monster_tags_paragraph = Paragraph(monster_tags, style_hang)
+    else:
+        monster_tags_paragraph = None
     # Weapon
     weapon = combine_weapon(m, formatted=True)
     if weapon:
-        elements.append(Paragraph(weapon, style_hang))
-    # Instincts
-    if m["instincts"]:
-        elements.append(Spacer(box_width, spacer))
-        label = Paragraph("<b>Instincts</b>", style_default)
-        items = list()
-        for item in m["instincts"]:
-            items.append(Paragraph(item, style_list))
-        table = [[label, items]]
-        style = [("LEFTPADDING", (0, 0), (1, 0), 0),
-                 ("RIGHTPADDING", (0, 0), (1, 0), 0),
-                 ("BOTTOMPADDING", (0, 0), (1, 0), 0),
-                 ("TOPPADDING", (0, 0), (1, 0), 0),
-                 ("VALIGN", (0, 0), (1, 0), "TOP"),
-                 ]
-        elements.append(Table(table, [0.675 * inch, (4.325 * inch) - 8],
-                              style=style))
+        weapon_paragraph = Paragraph(weapon, style_hang_right)
+    else:
+        weapon_paragraph = None
+    table = [[monster_tags_paragraph,
+              weapon_paragraph]]
+    style = [("LEFTPADDING", (0, 0), (1, 0), 0),
+             ("RIGHTPADDING", (0, 0), (1, 0), 0),
+             ("BOTTOMPADDING", (0, 0), (1, 0), 0),
+             ("TOPPADDING", (0, 0), (1, 0), 0),
+             ("VALIGN", (0, 0), (1, 0), "TOP"),
+             ]
+    elements.append(Table(table, style=style))
+
     # Qualities
     if m["qualities"]:
         elements.append(Spacer(box_width, spacer))
@@ -446,8 +444,34 @@ def pdf_create_page(monster_dict):
                  ("TOPPADDING", (0, 0), (1, 0), 0),
                  ("VALIGN", (0, 0), (1, 0), "TOP"),
                  ]
-        elements.append(Table(table, [0.675 * inch, (4.325 * inch) - 8],
-                              style=style))
+        qualities_table = Table(table, [0.675 * inch, None],
+                                style=style)
+    else:
+        qualities_table = None
+
+    # Instincts
+    if m["instincts"]:
+        elements.append(Spacer(box_width, spacer))
+        label = Paragraph("<b>Instincts</b>", style_default)
+        items = list()
+        for item in m["instincts"]:
+            items.append(Paragraph(item, style_list))
+        table = [[label, items]]
+        style = [("LEFTPADDING", (0, 0), (1, 0), 0),
+                 ("RIGHTPADDING", (0, 0), (1, 0), 0),
+                 ("BOTTOMPADDING", (0, 0), (1, 0), 0),
+                 ("TOPPADDING", (0, 0), (1, 0), 0),
+                 ("VALIGN", (0, 0), (1, 0), "TOP"),
+                 ]
+        instincts_table = Table(table, [0.675 * inch, None],
+                                style=style)
+    else:
+        instincts_table = None
+
+    table = [[qualities_table, instincts_table]]
+    style = [("VALIGN", (0, 0), (1, 0), "TOP")]
+    elements.append(Table(table, style=style))
+
     # Description
     elements.append(Spacer(box_width, spacer))
     table = [[Paragraph(m["description"], style_desc)]]
@@ -657,6 +681,9 @@ if args.back_pdf or args.pdf:
         style_hang.leftIndent = 16
         style_hang.firstLineIndent = -16
         style_hang.spaceBefore = spacer
+
+        style_hang_right = style_hang.clone("hang_right")
+        style_hang_right.alignment = TA_RIGHT
 
         style_list = style_default.clone("list")
         style_list.leftIndent = 12
