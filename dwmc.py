@@ -21,7 +21,7 @@ from xml.etree import ElementTree
 # Third-party
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY
-from reportlab.lib.pagesizes import letter
+from reportlab.lib.pagesizes import letter, landscape
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.pdfbase.pdfmetrics import registerFont, registerFontFamily
@@ -406,7 +406,7 @@ def pdf_create_page(monster_dict):
              ("FONT", (1, 0), (2, 1), font_default, 8),
              ("ALIGN", (1, 0), (2, 1), "RIGHT"),
              ]
-    elements.append(Table(table, [(3.15 * inch) - 8, 0.4 * inch, 0.2 * inch],
+    elements.append(Table(table, [(4.4 * inch) - 8, 0.4 * inch, 0.2 * inch],
                           style=style))
     # Tags
     monster_tags = combine_monster_tags(m, formatted=True)
@@ -430,7 +430,7 @@ def pdf_create_page(monster_dict):
                  ("TOPPADDING", (0, 0), (1, 0), 0),
                  ("VALIGN", (0, 0), (1, 0), "TOP"),
                  ]
-        elements.append(Table(table, [0.675 * inch, (3.075 * inch) - 8],
+        elements.append(Table(table, [0.675 * inch, (4.325 * inch) - 8],
                               style=style))
     # Qualities
     if m["qualities"]:
@@ -446,7 +446,7 @@ def pdf_create_page(monster_dict):
                  ("TOPPADDING", (0, 0), (1, 0), 0),
                  ("VALIGN", (0, 0), (1, 0), "TOP"),
                  ]
-        elements.append(Table(table, [0.675 * inch, (3.075 * inch) - 8],
+        elements.append(Table(table, [0.675 * inch, (4.325 * inch) - 8],
                               style=style))
     # Description
     elements.append(Spacer(box_width, spacer))
@@ -582,17 +582,18 @@ if args.yaml:
 # back-PDF or PDF
 if args.back_pdf or args.pdf:
     # Sizes
-    width, height = letter
-    margin = 0.25 * inch  # 0.25"
-    box_width = (width / 2) - (2 * margin)  # 3.75"
-    box_height = (height / 2) - (2 * margin)  # 5.00"
+    width, height = landscape(letter)
+    box_width = 5.0 * inch
+    box_height = 3.0 * inch
+    horizontal_margin = (width/2) - box_width  # 0.5"
+    vertical_margin = (height/2) - box_height  # 1.25"
     pad = 4  # 0.05"
     spacer = 6
     # Cards
-    x_left = margin
-    x_right = (width / 2) + margin
-    y_top = (height / 2) + margin
-    y_bottom = margin
+    x_left = horizontal_margin
+    x_right = width / 2
+    y_top = height / 2
+    y_bottom = vertical_margin
     cards = ((x_left, y_top), (x_right, y_top), (x_left, y_bottom),
              (x_right, y_bottom))
     # back-PDF-only
@@ -610,9 +611,12 @@ if args.back_pdf or args.pdf:
         frames = list()
         pages = list()
 
-        doc = BaseDocTemplate(args.pdf, pagesize=letter, showBoundry=True,
-                              leftMargin=margin, rightMargin=margin,
-                              topMargin=margin, bottomMargin=margin,
+        doc = BaseDocTemplate(args.pdf, pagesize=landscape(letter),
+                              showBoundry=True,
+                              leftMargin=horizontal_margin,
+                              rightMargin=horizontal_margin,
+                              topMargin=vertical_margin,
+                              bottomMargin=vertical_margin,
                               title="Dungeon World Monster Cards",
                               allowSplitting=False)
 
@@ -630,7 +634,7 @@ if args.back_pdf or args.pdf:
                                italic="Menlo-Italic",
                                boldItalic="Menlo-boldItalic")
             font_default = "Menlo"
-            #bullet = "\xe2\x87\xa8"  # rightwards white arrow
+            # bullet = "\xe2\x87\xa8"  # rightwards white arrow
             bullet = "\xe2\x86\xa3"  # rightwards arrow with tail
         else:
             font_default = "Courier"
@@ -646,11 +650,8 @@ if args.back_pdf or args.pdf:
 
         style_default = getSampleStyleSheet()["Normal"].clone("default")
         style_default.fontName = font_default
-        style_default.fontSize = 8
-        style_default.leading = 10
-
-        style_desc = style_default.clone("desc")
-        style_desc.alignment = TA_JUSTIFY
+        style_default.fontSize = 6
+        style_default.leading = 8
 
         style_hang = style_default.clone("hang")
         style_hang.leftIndent = 16
