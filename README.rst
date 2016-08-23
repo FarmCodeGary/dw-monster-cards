@@ -8,6 +8,9 @@ original 4"x5.5". (This is so you can easily mix them with your handwritten
 other changes as well: most notably I separated "Instinct" from "Moves", as per
 the Dungeon World book.
 
+I haven't extensively tested this fork--for the most part I just changed what I
+needed to change to make the style of cards I wanted.
+
 In addition to the primary PDF creation functionality, dwmc.py also has has
 some utility functions.
 
