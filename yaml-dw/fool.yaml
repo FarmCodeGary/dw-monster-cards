@@ -1,7 +1,7 @@
 ---
 name: Fool
-instincts:
-- To mock
+instinct: To mock
+moves:
 - Expose injustice
 - Play a trick
 description: "There\u2019s not but one person in all the King\u2019s court\

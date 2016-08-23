@@ -12,8 +12,8 @@ weapon:
   damage: d8 damage, 1 piercing
   tags_range:
   - Close
-instincts:
-- To spite the surface races
+instinct: To spite the surface races
+moves:
 - Poison them
 - Unleash an ancient spell
 - Call reinforcements

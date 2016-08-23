@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To lead
+instinct: To lead
+moves:
 - Start a war
 - Make a show of power
 - Enrage the tribes

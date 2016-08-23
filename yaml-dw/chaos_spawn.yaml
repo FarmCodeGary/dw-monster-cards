@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To undermine the established order
+instinct: To undermine the established order
+moves:
 - Rewrite reality
 - Unleash chaos from containment
 qualities:

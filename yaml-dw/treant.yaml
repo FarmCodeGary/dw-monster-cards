@@ -16,8 +16,8 @@ weapon:
   - Forceful
   tags_range:
   - Reach
-instincts:
-- To play tricks
+instinct: To play tricks
+moves:
 - Move with implacable strength
 - Set down roots
 - Spread old magic

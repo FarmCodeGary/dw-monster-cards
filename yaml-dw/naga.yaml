@@ -15,8 +15,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To lead
+instinct: To lead
+moves:
 - Send a follower to their death
 - Use old magic
 - Offer a deal or bargain

@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To eat
+instinct: To eat
+moves:
 - Consume stone
 - Give off a burst of light and heat
 qualities:

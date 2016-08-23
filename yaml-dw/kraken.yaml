@@ -13,8 +13,8 @@ weapon:
   - Forceful
   tags_range:
   - Reach
-instincts:
-- To rule the ocean
+instinct: To rule the ocean
+moves:
 - Drag a person or ship to a watery grave
 - Wrap them in tentacles
 qualities:

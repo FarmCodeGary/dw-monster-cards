@@ -17,8 +17,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To preserve order
+instinct: To preserve order
+moves:
 - End a spell or effect
 - Enforce a law of nature or man
 - Give a glimpse of destiny

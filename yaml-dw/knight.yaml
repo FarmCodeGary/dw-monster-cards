@@ -13,8 +13,8 @@ weapon:
   damage: b[2d10] damage
   tags_range:
   - Close
-instincts:
-- To live by a code
+instinct: To live by a code
+moves:
 - Make a moral stand
 - Lead soldiers into battle
 description: "What youngster doesn\u2019t cling to the rail at the mighty\

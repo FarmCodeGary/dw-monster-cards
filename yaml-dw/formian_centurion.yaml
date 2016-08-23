@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To fight as ordered
+instinct: To fight as ordered
+moves:
 - Advance as one
 - Summon reinforcements
 - Give a life for the hive

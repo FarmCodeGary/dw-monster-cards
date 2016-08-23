@@ -13,8 +13,8 @@ weapon:
   damage: d10+3 damage
   tags_range:
   - Reach
-instincts:
-- To resist change
+instinct: To resist change
+moves:
 - Move forward implacably
 - Bring its full bulk to bear
 - Destroy structures and buildings

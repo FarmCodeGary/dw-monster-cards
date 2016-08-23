@@ -9,8 +9,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To lash out
+instinct: To lash out
+moves:
 - Attack from the air
 - Carry out the bidding of a more powerful creature
 qualities:

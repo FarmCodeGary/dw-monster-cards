@@ -2,8 +2,8 @@
 name: Hedge Wizard
 tags_desc:
 - Magical
-instincts:
-- To learn
+instinct: To learn
+moves:
 - Cast almost the right spell (for a price)
 - Make deals beyond their ken
 description: "Not all those who wield the arcane arts are adventuring wizards.\

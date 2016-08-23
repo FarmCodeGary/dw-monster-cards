@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To fight
+instinct: To fight
+moves:
 - March into battle
 - Fight as one
 description: "For a commoner with a strong arm, sometimes it\u2019s this\

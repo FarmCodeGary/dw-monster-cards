@@ -17,8 +17,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To rend flesh and spill blood
+instinct: To rend flesh and spill blood
+moves:
 - Impale someone
 - Kill indiscriminately
 qualities:

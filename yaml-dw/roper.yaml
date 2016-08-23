@@ -15,8 +15,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To ambush
+instinct: To ambush
+moves:
 - Ensnare the unsuspecting
 - Disarm a foe
 - Chew on someone

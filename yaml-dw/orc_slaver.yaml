@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To take
+instinct: To take
+moves:
 - Take a captive
 - Pin someone under a net
 - Drug them

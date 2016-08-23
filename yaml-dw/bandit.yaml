@@ -12,8 +12,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To rob
+instinct: To rob
+moves:
 - Steal something
 - Demand tribute
 description: "Desperation is the watchword of banditry. When times are tough,\

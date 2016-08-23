@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Near
   - Far
-instincts:
-- To un-live
+instinct: To un-live
+moves:
 - Cast a perfected spell of death or destruction
 - Set a ritual or great working into motion
 - Reveal a preparation or plan already completed

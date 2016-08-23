@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Near
   - Far
-instincts:
-- To survive
+instinct: To survive
+moves:
 - Bring back news from the wilds
 - Slay a beast
 description: "The wilds are home to more than just beasts of horn and scale.\

@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To take from the living
+instinct: To take from the living
+moves:
 - Freeze flesh
 - Call on the unworthy dead
 qualities:

@@ -12,8 +12,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To upset order
+instinct: To upset order
+moves:
 - Die for a cause
 - Inspire others
 description: "In the countryside they\u2019d be called outlaw and driven\

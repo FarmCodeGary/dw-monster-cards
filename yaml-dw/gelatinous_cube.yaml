@@ -11,11 +11,11 @@ hp: 20
 armor: 1
 weapon:
   name: Engulf
-  damage: d10+1 damage, ignores armor
+  damage: d10+1 damage ignores armor
   tags_range:
   - Hand
-instincts:
-- To clean
+instinct: To clean
+moves:
 - Fill an apparently empty space
 - Dissolve
 qualities:

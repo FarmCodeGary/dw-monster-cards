@@ -12,8 +12,8 @@ weapon:
   damage: w[2d8-2] damage
   tags_range:
   - Near
-instincts:
-- To misguide
+instinct: To misguide
+moves:
 - Lead someone astray
 - Clear a path to the worst place possible
 qualities:

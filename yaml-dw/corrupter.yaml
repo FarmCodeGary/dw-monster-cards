@@ -12,8 +12,8 @@ weapon:
   damage: w[2d8] damage
   tags_range:
   - Close
-instincts:
-- To bargain
+instinct: To bargain
+moves:
 - Offer a deal with horrible consequences
 - Plumb the vaults of hell for a bargaining chip
 - Make a show of power

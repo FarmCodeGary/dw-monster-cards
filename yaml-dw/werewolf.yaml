@@ -13,8 +13,8 @@ weapon:
   - Messy
   tags_range:
   - Close
-instincts:
-- To shed the appearance of civilization
+instinct: To shed the appearance of civilization
+moves:
 - Transform to pass unnoticed as beast or man
 - Strike from within
 - Hunt like man and beast

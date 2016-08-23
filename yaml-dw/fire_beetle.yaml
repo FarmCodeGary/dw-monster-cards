@@ -8,11 +8,11 @@ hp: 3
 armor: 3
 weapon:
   name: Flames
-  damage: d6 damage, ignores armor
+  damage: d6 damage ignores armor
   tags_range:
   - Near
-instincts:
-- To enflame
+instinct: To enflame
+moves:
 - Undermine the ground
 - Burst from the earth
 - Spray forth flames

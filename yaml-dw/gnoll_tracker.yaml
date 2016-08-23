@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Near
   - Far
-instincts:
-- To prey on weakness
+instinct: To prey on weakness
+moves:
 - Doggedly track prey
 - Strike at a moment of weakness
 qualities:

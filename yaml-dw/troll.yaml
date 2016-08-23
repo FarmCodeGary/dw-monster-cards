@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To smash
+instinct: To smash
+moves:
 - Undo the effects of an attack (unless caused by a weakness, your call)
 - Hurl something or someone
 qualities:

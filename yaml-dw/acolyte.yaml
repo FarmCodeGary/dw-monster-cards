@@ -1,7 +1,7 @@
 ---
 name: Acolyte
-instincts:
-- To serve dutifully
+instinct: To serve dutifully
+moves:
 - Follow dogma
 - Offer eternal reward for mortal deeds
 description: "\u201CCan\u2019t all be the High Priest, they said. Can\u2019\

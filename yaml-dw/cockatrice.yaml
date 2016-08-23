@@ -13,8 +13,8 @@ weapon:
   damage: d8 damage
   tags_range:
   - Close
-instincts:
-- To defend the nest
+instinct: To defend the nest
+moves:
 - Start a slow transformation to stone
 qualities:
 - Stone touch

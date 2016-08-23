@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To preserve and create swamps
+instinct: To preserve and create swamps
+moves:
 - Call on the swamp itself for aid
 - Meld into the swamp
 - Reassemble into a new form

@@ -9,8 +9,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- Braaaaaains
+instinct: Braaaaaains
+moves:
 - Attack with overwhelming numbers
 - Corner them
 - Gain strength from the dead, spawn more zombies

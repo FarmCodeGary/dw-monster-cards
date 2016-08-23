@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To serve dragons
+instinct: To serve dragons
+moves:
 - Lay a trap
 - Call on dragons or draconic allies
 - Retreat and regroup

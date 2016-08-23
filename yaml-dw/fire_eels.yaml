@@ -10,8 +10,8 @@ weapon:
   damage: d6-2 damage, ignores armor
   tags_range:
   - Hand
-instincts:
-- To ignite
+instinct: To ignite
+moves:
 - Catch someone or something on fire (even underwater)
 - Consume burning prey
 qualities:

@@ -12,8 +12,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To collect
+instinct: To collect
+moves:
 - Turn a body part to stone with a look
 - "Draw someone\u2019s gaze"
 - Show hidden terrible beauty

@@ -15,8 +15,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To darken
+instinct: To darken
+moves:
 - Snuff out light
 - Spawn another shadow from the dead
 qualities:

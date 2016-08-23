@@ -13,8 +13,8 @@ weapon:
   - Forceful
   tags_range:
   - Reach
-instincts:
-- To consume
+instinct: To consume
+moves:
 - Swallow whole
 - Tunnel through stone and earth
 qualities:

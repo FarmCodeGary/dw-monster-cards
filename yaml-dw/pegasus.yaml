@@ -11,8 +11,8 @@ weapon:
   damage: d8 damage
   tags_range:
   - Close
-instincts:
-- To carry aloft
+instinct: To carry aloft
+moves:
 - Carry a rider into the air
 - Give their rider an advantage
 qualities:

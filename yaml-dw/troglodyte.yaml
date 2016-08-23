@@ -11,8 +11,8 @@ weapon:
   damage: d8 damage
   tags_range:
   - Close
-instincts:
-- To prey on civilization
+instinct: To prey on civilization
+moves:
 - Raid and retreat
 - Use scavenged weapons or magic
 description: "Long-forgotten, our last remaining ancestors dwell in caves\

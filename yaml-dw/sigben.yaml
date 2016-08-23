@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To disturb
+instinct: To disturb
+moves:
 - Poison them
 - "Do a vampire\u2019s bidding"
 qualities:

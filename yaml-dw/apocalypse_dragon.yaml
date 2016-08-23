@@ -17,8 +17,8 @@ weapon:
   - Messy
   tags_range:
   - Reach
-instincts:
-- To end the world
+instinct: To end the world
+moves:
 - Set a disaster in motion
 - Breathe forth the elements
 - Act with perfect foresight

@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To command
+instinct: To command
+moves:
 - Order drones into battle
 - Set great numbers in motion
 qualities:

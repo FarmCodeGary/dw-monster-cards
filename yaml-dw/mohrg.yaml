@@ -8,8 +8,8 @@ weapon:
   damage: d8 damage
   tags_range:
   - Close
-instincts:
-- To wreak havoc
+instinct: To wreak havoc
+moves:
 - Rage
 - Add to their collection of guts
 description: "You never get away with murder. Not really. You might evade\

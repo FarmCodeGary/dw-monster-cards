@@ -10,8 +10,8 @@ weapon:
   damage: d6-2 damage
   tags_range:
   - Hand
-instincts:
-- To infect
+instinct: To infect
+moves:
 - Burrow under flesh
 - Lay eggs
 - Burst forth from an infected creature

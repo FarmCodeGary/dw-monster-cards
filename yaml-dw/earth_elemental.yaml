@@ -13,8 +13,8 @@ weapon:
   - Forceful
   tags_range:
   - Reach
-instincts:
-- To show the strength of earth
+instinct: To show the strength of earth
+moves:
 - Turn the ground into a weapon
 - Meld into stone
 qualities:

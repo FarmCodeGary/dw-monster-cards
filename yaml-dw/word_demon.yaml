@@ -5,8 +5,8 @@ tags_desc:
 - Magical
 tags_org:
 - Solitary
-instincts:
-- To further their word
+instinct: To further their word
+moves:
 - Cast a spell related to their word
 - Bring their word into abundance
 description: "All of mortal magic is just words. Spells are prayers, rote\

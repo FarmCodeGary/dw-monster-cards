@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To eat
+instinct: To eat
+moves:
 - Attack an unsuspecting victim
 - Escape into the water
 - Hold something tight in its jaws

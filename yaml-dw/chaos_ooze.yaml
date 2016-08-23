@@ -10,11 +10,11 @@ hp: 23
 armor: 1
 weapon:
   name: Warping touch
-  damage: d10 damage, ignores armor
+  damage: d10 damage ignores armor
   tags_range:
   - Close
-instincts:
-- To change
+instinct: To change
+moves:
 - Cause a change in appearance or substance
 - Briefly bridge the planes
 qualities:

@@ -11,8 +11,8 @@ weapon:
   damage: d8 damage, ignores armor
   tags_range:
   - Close
-instincts:
-- To decay
+instinct: To decay
+moves:
 - Turn metal to rust
 - Gain strength from consuming metal
 qualities:

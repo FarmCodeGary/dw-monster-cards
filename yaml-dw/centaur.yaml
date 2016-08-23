@@ -16,8 +16,8 @@ weapon:
   - Close
   - Reach
   - Near
-instincts:
-- To rage
+instinct: To rage
+moves:
 - Overrun them
 - Fire a perfect bullseye
 - Move with unrelenting speed

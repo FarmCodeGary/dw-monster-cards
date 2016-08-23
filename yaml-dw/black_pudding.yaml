@@ -11,8 +11,8 @@ weapon:
   damage: d10 damage, ignores armor
   tags_range:
   - Close
-instincts:
-- To dissolve
+instinct: To dissolve
+moves:
 - Eat away metal, flesh, or wood
 - 'Ooze into a troubling place: food, armor, stomach'
 qualities:

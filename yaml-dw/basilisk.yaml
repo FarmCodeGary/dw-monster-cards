@@ -11,8 +11,8 @@ weapon:
   damage: d10 damage
   tags_range:
   - Close
-instincts:
-- To create new statuary
+instinct: To create new statuary
+moves:
 - Turn flesh to stone with a gaze
 - Retreat into a maze of stone
 description: "\u201CFew have seen a basilisk and lived to tell the tale.\

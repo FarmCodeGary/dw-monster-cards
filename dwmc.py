@@ -178,7 +178,8 @@ def parse_xml(xml_file):
                 m["weapon"]["damage"] = None
                 m["weapon"]["tags_desc"] = list()
                 m["weapon"]["tags_range"] = list()
-                m["instincts"] = list()
+                m["instinct"] = None
+                m["moves"] = list()
                 m["qualities"] = list()
                 m["description"] = ""
                 m["reference"] = None
@@ -253,7 +254,7 @@ def parse_xml(xml_file):
                         else:
                             instinct = e.tail
                             instinct = instinct.lstrip(":")
-                            m["instincts"].insert(0, instinct.strip())
+                            m["instinct"] = instinct.strip()
             elif style == "NoIndent":
                 # Treant description
                 if element.text:
@@ -262,11 +263,11 @@ def parse_xml(xml_file):
                 if len(element) > 0:
                     instinct = e.tail
                     instinct = instinct.lstrip(":")
-                    m["instincts"].insert(0, instinct.strip())
+                    m["instinct"] = instinct.strip()
 
         elif element.tag == "ul":
             for item in element:
-                m["instincts"].append(item.text)
+                m["moves"].append(item.text)
 
             # END - ul is last element in monster_setting XML files
             monsters[m["name"]] = m
@@ -287,7 +288,8 @@ def parse_yaml(yaml_file):
     m["weapon"]["damage"] = None
     m["weapon"]["tags_desc"] = list()
     m["weapon"]["tags_range"] = list()
-    m["instincts"] = list()
+    m["instinct"] = None
+    m["moves"] = list()
     m["qualities"] = list()
     m["description"] = ""
     m["reference"] = None
@@ -367,9 +369,10 @@ def csv_write_row(monster_dict):
     description = description.replace("<br />", " \ ")
     csvwriter.writerow([m["name"], str(m["hp"]), str(m["armor"]),
                        combine_monster_tags(m), combine_weapon(m),
-                       ", ".join(m["instincts"]), ", ".join(m["qualities"]),
-                       description, str(m["reference"]), m["setting"],
-                       str(m["setting_reference"])])
+                       m["instinct"], ", ".join(m["moves"]),
+                       ", ".join(m["qualities"]), description,
+                       str(m["reference"]), m["setting"],
+                        str(m["setting_reference"])])
 
 
 def pdf_create_page(monster_dict):
@@ -428,33 +431,46 @@ def pdf_create_page(monster_dict):
              ("TOPPADDING", (0, 0), (1, 0), 0),
              ("VALIGN", (0, 0), (1, 0), "TOP"),
              ]
-    elements.append(Table(table, style=style))
+    elements.append(Table(table, [None, None], style=style))
+
+    elements.append(Spacer(box_width, spacer))
 
     # Qualities
     if m["qualities"]:
-        elements.append(Spacer(box_width, spacer))
-        label = Paragraph("<b>Qualities</b>", style_default)
-        items = list()
+        qualities_label = Paragraph("<b>Qualities</b>", style_default)
+        qualities_items = list()
         for item in m["qualities"]:
-            items.append(Paragraph(item, style_list))
-        table = [[label, items]]
-        style = [("LEFTPADDING", (0, 0), (1, 0), 0),
-                 ("RIGHTPADDING", (0, 0), (1, 0), 0),
-                 ("BOTTOMPADDING", (0, 0), (1, 0), 0),
-                 ("TOPPADDING", (0, 0), (1, 0), 0),
-                 ("VALIGN", (0, 0), (1, 0), "TOP"),
-                 ]
-        qualities_table = Table(table, [0.675 * inch, None],
-                                style=style)
+            qualities_items.append(Paragraph(item, style_list))
     else:
-        qualities_table = None
+        qualities_label = None
+        qualities_items = None
 
-    # Instincts
-    if m["instincts"]:
-        elements.append(Spacer(box_width, spacer))
-        label = Paragraph("<b>Instincts</b>", style_default)
+    # Instinct
+    instinct_label = Paragraph("<b>Instinct</b>", style_default)
+    instinct_item = Paragraph(m["instinct"], style_list)
+
+    # Qualities and Instinct table
+    if m["qualities"]:
+        table = [[qualities_label, qualities_items],
+                 [instinct_label, instinct_item]]
+        max_y = 1
+    else:
+        table = [[instinct_label, instinct_item]]
+        max_y = 0
+    style = [("LEFTPADDING", (0, 0), (1, max_y), 0),
+             ("RIGHTPADDING", (0, 0), (1, max_y), 0),
+             ("BOTTOMPADDING", (0, 0), (1, max_y), 0),
+             ("TOPPADDING", (0, 0), (1, max_y), 0),
+             ("VALIGN", (0, 0), (1, max_y), "TOP"),
+             ]
+    qualities_and_instinct_table = Table(table, [0.675 * inch, None],
+                                         style=style)
+
+    # Moves
+    if m["moves"]:
+        label = Paragraph("<b>Moves</b>", style_default)
         items = list()
-        for item in m["instincts"]:
+        for item in m["moves"]:
             items.append(Paragraph(item, style_list))
         table = [[label, items]]
         style = [("LEFTPADDING", (0, 0), (1, 0), 0),
@@ -463,12 +479,12 @@ def pdf_create_page(monster_dict):
                  ("TOPPADDING", (0, 0), (1, 0), 0),
                  ("VALIGN", (0, 0), (1, 0), "TOP"),
                  ]
-        instincts_table = Table(table, [0.675 * inch, None],
-                                style=style)
+        moves_table = Table(table, [0.675 * inch, None],
+                            style=style)
     else:
-        instincts_table = None
+        moves_table = None
 
-    table = [[qualities_table, instincts_table]]
+    table = [[qualities_and_instinct_table, moves_table]]
     style = [("VALIGN", (0, 0), (1, 0), "TOP")]
     elements.append(Table(table, style=style))
 
@@ -520,17 +536,19 @@ def plain_write(monster_dict):
     weapon = combine_weapon(m)
     if weapon:
         print(weapon)
-    # Instincts
-    if m["instincts"]:
+    # Instinct
+    print("Instinct: " + m["instinct"])
+    # Moves
+    if m["moves"]:
         leader = textwrap.TextWrapper(width=80,
-                                      initial_indent=u"%-10s> " % "Instincts",
+                                      initial_indent=u"%-10s> " % "Moves",
                                       subsequent_indent=u"%12s" % "")
-        print(leader.fill(m["instincts"].pop(0)))
+        print(leader.fill(m["moves"].pop(0)))
         follow = textwrap.TextWrapper(width=80,
                                       initial_indent=u"%-10s> " % "",
                                       subsequent_indent=u"%12s" % "")
-        for instinct in m["instincts"]:
-            print(follow.fill(instinct))
+        for move in m["moves"]:
+            print(follow.fill(move))
     # Qualities
     if m["qualities"]:
         leader = textwrap.TextWrapper(width=80,
@@ -661,7 +679,7 @@ if args.back_pdf or args.pdf:
             # bullet = "\xe2\x87\xa8"  # rightwards white arrow
             bullet = "\xe2\x86\xa3"  # rightwards arrow with tail
         else:
-            font_default = "Courier"
+            font_default = "Times-Roman"
             bullet = "\xe2\x80\xa2"  # bullet
         # Title font
         font_title = "Times-Roman"
@@ -674,8 +692,8 @@ if args.back_pdf or args.pdf:
 
         style_default = getSampleStyleSheet()["Normal"].clone("default")
         style_default.fontName = font_default
-        style_default.fontSize = 6
-        style_default.leading = 8
+        style_default.fontSize = 8
+        style_default.leading = 10
 
         style_hang = style_default.clone("hang")
         style_hang.leftIndent = 16
@@ -710,8 +728,8 @@ elif args.csv:
     csvwriter = UnicodeWriter(csv_path, quoting=csv.QUOTE_ALL,
                               lineterminator="\n")
     csvwriter.writerow(("name", "tags", "hp", "armor", "weapon",
-                        "qualities", "instincts", "description", "reference",
-                        "setting", "setting_reference"))
+                        "qualities", "instinct", "moves", "description",
+                        "reference", "setting", "setting_reference"))
 
 # Create monsters dict from parse files and create outputs
 if args.file:

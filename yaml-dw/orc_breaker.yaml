@@ -7,14 +7,14 @@ tags_size:
 hp: 16
 weapon:
   name: Hammer
-  damage: d10+3 damage, ignores armor
+  damage: d10+3 damage ignores armor
   tags_desc:
   - Forceful
   tags_range:
   - Close
   - Reach
-instincts:
-- To smash
+instinct: To smash
+moves:
 - Destroy armor or protection
 - Lay low the mighty
 description: "\u201CBefore you set out across the hordeland, brave sir,\

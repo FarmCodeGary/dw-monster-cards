@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To do as ordered
+instinct: To do as ordered
+moves:
 - Uphold the law
 - Make a profit
 description: "Noble protector or merely drunken lout, it often makes no\

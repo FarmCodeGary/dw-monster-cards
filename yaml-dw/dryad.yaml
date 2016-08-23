@@ -14,8 +14,8 @@ weapon:
   damage: w[2d8]damage
   tags_range:
   - Close
-instincts:
-- To love nature passionately
+instinct: To love nature passionately
+moves:
 - Entice a mortal
 - Merge into a tree
 - Turn nature against them

@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To burn eternally
+instinct: To burn eternally
+moves:
 - Grant power for a price
 - Summon the forces of the City of Brass
 qualities:

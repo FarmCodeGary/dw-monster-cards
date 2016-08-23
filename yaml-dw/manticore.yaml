@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To kill
+instinct: To kill
+moves:
 - Poison them
 - Rip something apart
 qualities:

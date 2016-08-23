@@ -10,8 +10,8 @@ weapon:
   damage: d10 damage
   tags_range:
   - Close
-instincts:
-- To drive life from a place
+instinct: To drive life from a place
+moves:
 - Turn their haunt against a creature
 - Bring the environment to life
 qualities:

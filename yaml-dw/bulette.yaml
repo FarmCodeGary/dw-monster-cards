@@ -15,8 +15,8 @@ weapon:
   - Forceful
   tags_range:
   - Close
-instincts:
-- To devour
+instinct: To devour
+moves:
 - Drag prey into rough tunnels
 - Burst from the earth
 - Swallow whole

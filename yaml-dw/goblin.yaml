@@ -15,8 +15,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To multiply
+instinct: To multiply
+moves:
 - Charge!
 - Call more goblins
 - Retreat and return with (many) more

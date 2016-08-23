@@ -15,8 +15,8 @@ weapon:
   damage: w[2d8] damage
   tags_range:
   - Close
-instincts:
-- To live a life of stolen luxury
+instinct: To live a life of stolen luxury
+moves:
 - Steal
 - Put on the appearance of friendship
 description: "It would be foolish, now, to draw conclusions about folks\

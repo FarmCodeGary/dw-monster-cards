@@ -17,8 +17,8 @@ weapon:
   - Close
   - Reach
   - Near
-instincts:
-- To consume in flame
+instinct: To consume in flame
+moves:
 - Summon elemental fire
 - Melt away deception
 qualities:

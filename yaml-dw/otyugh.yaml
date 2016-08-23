@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To befoul
+instinct: To befoul
+moves:
 - Infect someone with filth fever
 - Fling someone or something
 qualities:

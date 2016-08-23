@@ -11,8 +11,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To infiltrate
+instinct: To infiltrate
+moves:
 - "Assume the shape of a person whose flesh it\u2019s tasted"
 - "Use another\u2019s identity to advantage"
 - "Leave someone\u2019s reputation shattered"

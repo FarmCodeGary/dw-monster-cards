@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To deny light
+instinct: To deny light
+moves:
 - Hold someone, wringing the breath from them
 - Fling a held creature
 qualities:

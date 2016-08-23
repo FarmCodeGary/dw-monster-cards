@@ -17,8 +17,8 @@ weapon:
   - Messy
   tags_range:
   - Reach
-instincts:
-- To rule
+instinct: To rule
+moves:
 - Bend an element to its will
 - Demand tribute
 - Act with disdain

@@ -1,7 +1,7 @@
 ---
 name: Peasant
-instincts:
-- To get by
+instinct: To get by
+moves:
 - Plead for help
 - Offer a simple reward and gratitude
 description: "Covered in muck, downtrodden at the bottom of the great chain\

@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To devour
+instinct: To devour
+moves:
 - Lure prey with lies and illusions
 - Lash out at light
 - Devour

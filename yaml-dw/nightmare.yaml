@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To ride rampant
+instinct: To ride rampant
+moves:
 - Sheath a rider in hellish flame
 - Drive them away
 qualities:

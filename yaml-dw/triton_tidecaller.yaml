@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Near
   - Far
-instincts:
-- To bring on The Flood
+instinct: To bring on The Flood
+moves:
 - Cast a spell of water and destruction
 - Command beasts of the sea
 - Reveal divine proclamation

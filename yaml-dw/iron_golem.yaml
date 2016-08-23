@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To serve
+instinct: To serve
+moves:
 - Follow orders implacably
 - Use a special tool or adaptation, built-in
 qualities:

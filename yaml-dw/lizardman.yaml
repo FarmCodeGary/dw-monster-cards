@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To destroy civilization
+instinct: To destroy civilization
+moves:
 - Ambush the unsuspecting
 - Launch an amphibious assault
 qualities:

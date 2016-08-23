@@ -1,7 +1,7 @@
 ---
 name: Spy
-instincts:
-- To infiltrate
+instinct: To infiltrate
+moves:
 - Report the truth
 - Double cross
 description: "Beloved of kings but never truly trusted. Mysterious, secretive\

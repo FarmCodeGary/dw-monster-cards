@@ -10,8 +10,8 @@ weapon:
   - Forceful
   tags_range:
   - Close
-instincts:
-- To live
+instinct: To live
+moves:
 - Follow orders
 - Detach a body part
 qualities:

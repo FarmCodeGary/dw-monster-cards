@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To capture
+instinct: To capture
+moves:
 - Take a captive
 - Return to whence it came
 - Torture with glee

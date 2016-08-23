@@ -11,8 +11,8 @@ weapon:
   damage: d10 damage
   tags_range:
   - Close
-instincts:
-- To hunt
+instinct: To hunt
+moves:
 - Strike from darkness
 description: "Body of a bear. Feathers of an owl. Beak, claws, and excellent\
   \ night vision. What\u2019s not to love?"

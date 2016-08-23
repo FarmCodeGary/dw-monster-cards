@@ -17,8 +17,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To feast on souls
+instinct: To feast on souls
+moves:
 - Devour or trap dying soul
 - "Bargain for a soul\u2019s return"
 description: "Most folk know that the undead feed on flesh. The warmth,\

@@ -13,8 +13,8 @@ weapon:
   damage: d10+1 damage
   tags_range:
   - Reach
-instincts:
-- To do as commanded
+instinct: To do as commanded
+moves:
 - Belch forth flame
 - Run them over
 - Poison them

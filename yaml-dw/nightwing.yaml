@@ -11,8 +11,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To hunt
+instinct: To hunt
+moves:
 - Attack from the night sky
 - Fly away with prey
 qualities:

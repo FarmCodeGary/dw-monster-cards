@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To craft
+instinct: To craft
+moves:
 - Offer a trade or deal
 - Strike with fire or magic
 - Provide just the right item, at a price

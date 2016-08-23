@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To kill in darkness
+instinct: To kill in darkness
+moves:
 - Poison them
 - Melt into the shadows
 - Cloak them in darkness

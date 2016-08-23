@@ -1,7 +1,7 @@
 ---
 name: Tinkerer
-instincts:
-- To create
+instinct: To create
+moves:
 - Offer an oddity at a price
 - Spin tales of great danger and reward in far-off lands
 description: "It\u2019s said that if you see a tinker on the road and you\

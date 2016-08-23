@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To split
+instinct: To split
+moves:
 - Split something in two with mighty claws
 - Retreat into water
 qualities:

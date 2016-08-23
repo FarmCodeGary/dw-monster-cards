@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Near
-instincts:
-- To grow in power
+instinct: To grow in power
+moves:
 - Start a lair, form a base of power
 - Call on family ties
 - Demand oaths of servitude

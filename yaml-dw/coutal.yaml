@@ -1,8 +1,7 @@
 ---
 name: Coutal
 tags_desc:
-- Intelligent
-- Devious
+- Intelligent Devious
 tags_org:
 - Solitary
 hp: 12
@@ -12,8 +11,8 @@ weapon:
   damage: d8 damage, ignores armor
   tags_range:
   - Close
-instincts:
-- To cleanse
+instinct: To cleanse
+moves:
 - Pass judgment on a person or place
 - Summon divine forces to cleanse
 - Offer information in exchange for service

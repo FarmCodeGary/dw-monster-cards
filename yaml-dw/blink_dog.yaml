@@ -14,8 +14,8 @@ weapon:
   damage: d8 damage
   tags_range:
   - Close
-instincts:
-- To hunt
+instinct: To hunt
+moves:
 - "Give the appearance of being somewhere they\u2019re not"
 - Summon the pack
 - Move with amazing speed

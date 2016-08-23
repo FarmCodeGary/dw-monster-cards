@@ -9,8 +9,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To take the semblance of life
+instinct: To take the semblance of life
+moves:
 - Act out what it did in life
 - Snuff out the warmth of life
 - Reconstruct from miscellaneous bones

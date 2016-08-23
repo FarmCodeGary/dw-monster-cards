@@ -11,8 +11,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To defend
+instinct: To defend
+moves:
 - Drive them back
 - Call up reinforcements
 description: "For ages, men believed all dwarves were male and all were\

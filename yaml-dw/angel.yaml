@@ -16,8 +16,8 @@ weapon:
   - Forceful
   tags_range:
   - Close
-instincts:
-- To share divine will
+instinct: To share divine will
+moves:
 - Deliver visions and prophecy
 - Stir mortals to action
 - Expose sin and injustice

@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Near
-instincts:
-- To spy on the surface world
+instinct: To spy on the surface world
+moves:
 - Reveal their secrets
 - Strike at weakness
 qualities:

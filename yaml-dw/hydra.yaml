@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To grow
+instinct: To grow
+moves:
 - Attack many enemies at once
 - Regenerate a body part (especially a head)
 qualities:

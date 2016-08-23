@@ -10,14 +10,14 @@ tags_org:
 hp: 6
 weapon:
   name: Inflict Wounds
-  damage: d8+2 damage, ignores armor
+  damage: d8+2 damage ignores armor
   tags_range:
   - Close
   - Reach
   - Near
   - Far
-instincts:
-- To hate
+instinct: To hate
+moves:
 - Rend flesh with divine magic
 - Take an eye
 - Make a sacrifice and grow in power

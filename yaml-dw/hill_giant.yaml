@@ -18,8 +18,8 @@ weapon:
   - Reach
   - Near
   - Far
-instincts:
-- Ruin everything.
+instinct: Ruin everything.
+moves:
 - Throw something
 - Do something stupid
 - Shake the earth

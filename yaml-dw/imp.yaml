@@ -15,8 +15,8 @@ weapon:
   - Close
   - Near
   - Far
-instincts:
-- To harass
+instinct: To harass
+moves:
 - Send information back to hell
 - Cause mischief
 description: These tiny observer-demons often act as a first-time binding

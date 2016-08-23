@@ -15,8 +15,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To weave webs (literal and metaphorical)
+instinct: To weave webs (literal and metaphorical)
+moves:
 - Enmesh in webbing
 - Put a plot into motion
 qualities:

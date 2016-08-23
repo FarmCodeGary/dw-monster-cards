@@ -1,7 +1,7 @@
 ---
 name: High Priest
-instincts:
-- To lead
+instinct: To lead
+moves:
 - Set down divine law
 - Reveal divine secrets
 - Commission divine undertakings

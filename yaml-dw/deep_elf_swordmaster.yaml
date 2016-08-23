@@ -12,8 +12,8 @@ weapon:
   damage: b[2d8]+2 damage, 1 piercing
   tags_range:
   - Close
-instincts:
-- To punish unbelievers
+instinct: To punish unbelievers
+moves:
 - Inflict pain beyond measure
 - Use the dark to advantage
 description: "The deep elves lost the sweetness and gentle peace of their\

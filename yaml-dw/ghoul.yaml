@@ -11,8 +11,8 @@ weapon:
   - Messy
   tags_range:
   - Close
-instincts:
-- To eat
+instinct: To eat
+moves:
 - Gnaw off a body part
 - Gain the memories of their meal
 description: "Hunger. Hunger hunger hunger. Desperate clinging void-stomach-emptiness\

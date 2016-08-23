@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To smash
+instinct: To smash
+moves:
 - Attack two enemies at once
 - Defend its creator
 qualities:

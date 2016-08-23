@@ -15,8 +15,8 @@ weapon:
   damage: w[2d4] damage
   tags_range:
   - Hand
-instincts:
-- To play tricks
+instinct: To play tricks
+moves:
 - "Play a trick to expose someone\u2019s true nature"
 - Confuse their senses
 - Craft an illusion

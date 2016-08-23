@@ -13,8 +13,8 @@ weapon:
   damage: d10+5 damage
   tags_range:
   - Reach
-instincts:
-- To endure
+instinct: To endure
+moves:
 - Stampede
 - Knock something down
 - Unleash a deafening bellow

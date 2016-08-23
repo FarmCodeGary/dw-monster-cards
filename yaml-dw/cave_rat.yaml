@@ -8,13 +8,13 @@ hp: 7
 armor: 1
 weapon:
   name: Gnaw
-  damage: d6 damage, 1 piercing
+  damage: d6 damage 1 piercing
   tags_desc:
   - Messy
   tags_range:
   - Close
-instincts:
-- To devour
+instinct: To devour
+moves:
 - Swarm
 - Rip something (or someone) apart
 description: "Who hasn\u2019t seen a rat before? It\u2019s like that, but\

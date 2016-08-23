@@ -14,8 +14,8 @@ weapon:
   - Close
   - Near
   - Far
-instincts:
-- To lead
+instinct: To lead
+moves:
 - Stir tritons to war
 - Call reinforcements
 qualities:

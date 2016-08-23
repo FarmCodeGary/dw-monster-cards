@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To pass on divine vengeance
+instinct: To pass on divine vengeance
+moves:
 - Weave spells of hatred and malice
 - Rally the deep elves
 - Pass on divine knowledge

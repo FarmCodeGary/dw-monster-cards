@@ -13,8 +13,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To steal
+instinct: To steal
+moves:
 - Take something important to its planar lair
 - Retreat to the Ethereal plane
 - Use an item from its lair

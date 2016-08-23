@@ -15,8 +15,8 @@ weapon:
   - Forceful
   tags_range:
   - Close
-instincts:
-- To manipulate
+instinct: To manipulate
+moves:
 - Charm someone
 - Feed on their blood
 - Retreat to plan again

@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To contain
+instinct: To contain
+moves:
 - Confuse them
 - Make them lost
 qualities:

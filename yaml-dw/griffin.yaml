@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To serve allies
+instinct: To serve allies
+moves:
 - "Judge someone\u2019s worthiness"
 - Carry an ally aloft
 - Strike from above

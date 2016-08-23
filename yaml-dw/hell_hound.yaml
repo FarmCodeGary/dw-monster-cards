@@ -12,8 +12,8 @@ weapon:
   damage: d8 damage
   tags_range:
   - Close
-instincts:
-- To pursue
+instinct: To pursue
+moves:
 - Follow despite all obstacles
 - Spew fire
 - Summon the forces of hell on their target

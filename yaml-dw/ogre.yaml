@@ -16,8 +16,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To return the world to darker days
+instinct: To return the world to darker days
+moves:
 - Destroy something
 - ' Fly into a rage'
 - ' Take something by force'

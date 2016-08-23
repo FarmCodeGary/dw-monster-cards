@@ -12,8 +12,8 @@ weapon:
   damage: w[2d4] damage
   tags_range:
   - Close
-instincts:
-- To suffer
+instinct: To suffer
+moves:
 - Fill them with despair
 - Beg for mercy
 - Draw evil attention

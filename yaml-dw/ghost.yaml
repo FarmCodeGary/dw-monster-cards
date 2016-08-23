@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To haunt
+instinct: To haunt
+moves:
 - Reveal the terrifying nature of death
 - 'Haunt a place of importance '
 - Offer information from the other side, at a price

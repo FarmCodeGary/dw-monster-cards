@@ -13,8 +13,8 @@ weapon:
   damage: w[2d8] damage
   tags_range:
   - Close
-instincts:
-- To enjoy
+instinct: To enjoy
+moves:
 - Pull others into revelry through magic
 - Force gifts upon them
 - Play jokes with illusions and tricks

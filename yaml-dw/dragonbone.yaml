@@ -13,8 +13,8 @@ weapon:
   - Messy
   tags_range:
   - Reach
-instincts:
-- To serve
+instinct: To serve
+moves:
 - Attack unrelentingly
 description: 'Mystical sorcerers debate: is this creature truly undead or
   is it a golem made of a particularly rare and blasphemous material? The

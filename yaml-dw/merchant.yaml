@@ -1,7 +1,7 @@
 ---
 name: Merchant
-instincts:
-- To profit
+instinct: To profit
+moves:
 - Propose a business venture
 - "Offer a \u201Cdeal\u201D"
 description: "\u201CTen foot poles. Get your ten foot poles, here. Torches,\

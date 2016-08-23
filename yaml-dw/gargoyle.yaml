@@ -12,8 +12,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To guard
+instinct: To guard
+moves:
 - Attack with the element of surprise
 - Take to the air
 - Blend into stonework

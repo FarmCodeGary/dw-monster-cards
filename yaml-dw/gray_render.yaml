@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To serve
+instinct: To serve
+moves:
 - Tear something apart
 description: On its own, the render is a force of utter destruction. Huge
   and leathery, with a maw of unbreakable teeth and claws to match, the

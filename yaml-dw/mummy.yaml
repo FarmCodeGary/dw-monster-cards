@@ -12,8 +12,8 @@ weapon:
   damage: d10+2 damage
   tags_range:
   - Close
-instincts:
-- To enjoy eternal rest
+instinct: To enjoy eternal rest
+moves:
 - Curse them
 - Wrap them up
 - Rise again

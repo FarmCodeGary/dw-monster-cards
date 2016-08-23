@@ -1,7 +1,7 @@
 ---
 name: Noble
-instincts:
-- To rule
+instinct: To rule
+moves:
 - Issue an order
 - Offer a reward
 description: "Are they granted their place by the gods, perhaps? Is that\

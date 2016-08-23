@@ -15,8 +15,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To grow
+instinct: To grow
+moves:
 - Shoot forth new growth
 - Attack the unwary
 qualities:

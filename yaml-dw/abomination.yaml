@@ -17,8 +17,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To end life
+instinct: To end life
+moves:
 - Tear flesh apart
 - Spill forth putrid guts
 qualities:

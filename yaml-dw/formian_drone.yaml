@@ -12,8 +12,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To follow orders
+instinct: To follow orders
+moves:
 - Raise the alarm
 - Create value for the hive
 - Assimilate

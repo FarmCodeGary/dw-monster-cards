@@ -14,8 +14,8 @@ weapon:
   - Close
   - Near
   - Far
-instincts:
-- To wage war
+instinct: To wage war
+moves:
 - Lead tritons to battle
 - Pull them beneath the waves
 qualities:

@@ -13,8 +13,8 @@ weapon:
   - Forceful
   tags_range:
   - Reach
-instincts:
-- To rule
+instinct: To rule
+moves:
 - Answer the call of sacrifice
 - Drive them from the jungle
 - Throw someone

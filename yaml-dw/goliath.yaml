@@ -16,8 +16,8 @@ weapon:
   - Forceful
   tags_range:
   - Reach
-instincts:
-- To retake
+instinct: To retake
+moves:
 - Shake the earth
 - Retreat, only to come back stronger
 description: "They dwell beneath the earth because they do not belong above\

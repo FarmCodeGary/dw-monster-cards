@@ -12,8 +12,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To undermine
+instinct: To undermine
+moves:
 - Undermine the ground
 - Burst from the earth
 - Spray forth acid, eating away at metal and flesh

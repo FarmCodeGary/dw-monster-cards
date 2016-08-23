@@ -13,8 +13,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To replace dwarves
+instinct: To replace dwarves
+moves:
 - Fill a mind with foreign thoughts
 - "Take control of a beast\u2019s mind"
 qualities:

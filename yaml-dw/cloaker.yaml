@@ -8,11 +8,11 @@ hp: 12
 armor: 1
 weapon:
   name: Constrict
-  damage: d10 damage, ignores armor
+  damage: d10 damage ignores armor
   tags_range:
   - Close
-instincts:
-- To engulf
+instinct: To engulf
+moves:
 - Engulf the unsuspecting
 qualities:
 - Looks like a cloak

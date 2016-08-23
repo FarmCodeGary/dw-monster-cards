@@ -13,8 +13,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To wage war
+instinct: To wage war
+moves:
 - Launch an amphibious assault
 - Heal at a prodigious rate
 qualities:

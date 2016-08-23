@@ -15,8 +15,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To rule the heights
+instinct: To rule the heights
+moves:
 - Attack from the sky
 - Pull someone into the air
 - Call on ancient oaths

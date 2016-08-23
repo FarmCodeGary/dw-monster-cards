@@ -8,14 +8,14 @@ tags_org:
 hp: 12
 weapon:
   name: Elemental blast
-  damage: d10 damage, ignores armor
+  damage: d10 damage ignores armor
   tags_range:
   - Close
   - Reach
   - Near
   - Far
-instincts:
-- To strengthen orc-kind
+instinct: To strengthen orc-kind
+moves:
 - Give protection of earth
 - Give power of fire
 - Give swiftness of water

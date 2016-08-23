@@ -12,8 +12,8 @@ weapon:
   damage: b[2d6] damage
   tags_range:
   - Close
-instincts:
-- To seek perfection
+instinct: To seek perfection
+moves:
 - Strike at a weak point
 - Set ancient plans in motion
 - Use the woods to advantage

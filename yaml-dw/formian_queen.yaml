@@ -17,8 +17,8 @@ weapon:
   - Forceful
   tags_range:
   - Reach
-instincts:
-- To spread formians
+instinct: To spread formians
+moves:
 - Call every formian it spawned
 - Release a half-formed larval mutation
 - Organize and issue orders

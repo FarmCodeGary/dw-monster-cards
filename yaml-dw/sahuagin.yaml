@@ -14,8 +14,8 @@ weapon:
   - Messy
   tags_range:
   - Close
-instincts:
-- To spill blood
+instinct: To spill blood
+moves:
 - Bite off a limb
 - Hurl a poisoned spear
 - Frenzy at the sight of blood

@@ -11,8 +11,8 @@ weapon:
   damage: d10 damage
   tags_range:
   - Near
-instincts:
-- To get revenge
+instinct: To get revenge
+moves:
 - Drown out all other sound with a ceaseless scream
 - Unleash a skull-splitting noise
 - Disappear into the mists

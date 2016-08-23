@@ -11,8 +11,8 @@ weapon:
   damage: d6 damage
   tags_range:
   - Close
-instincts:
-- To eat
+instinct: To eat
+moves:
 - Paralyze with a touch
 qualities:
 - Amphibious

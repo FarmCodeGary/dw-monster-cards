@@ -14,8 +14,8 @@ weapon:
   tags_range:
   - Close
   - Reach
-instincts:
-- To share divine insight
+instinct: To share divine insight
+moves:
 - Pass on demonic influence
 - Drive the pack into a fervor
 qualities:
