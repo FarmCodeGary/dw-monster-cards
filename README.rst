@@ -12,7 +12,8 @@ I also added yaml files and output PDF files with monsters by setting, in case
 you want to print them on different colors of paper for quick reference.
 
 I haven't extensively tested this fork--for the most part I just changed what I
-needed to change to make the style of cards I wanted.
+needed to change to make the style of cards I wanted. Some features may not be
+fully functional.
 
 In addition to the primary PDF creation functionality, dwmc.py also has has
 some utility functions.
